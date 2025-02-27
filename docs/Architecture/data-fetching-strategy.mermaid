@@ -1,0 +1,7 @@
+graph TD;
+    A["Server Components"]-->B["Direct DB Access"]
+    A-->C["Server Actions"]
+    D["Client Components"]-->E["Route Handlers"]
+    D-->F["React Query for Client Cache"]
+    C-->G["Form Submissions"]
+    B-->H["Initial Page Data"]
