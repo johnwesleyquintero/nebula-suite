@@ -213,7 +213,7 @@ The Nebula Suite follows a structured data pipeline architecture that enables ef
 
 Our intuitive data mapping process ensures accurate field mapping and data transformation:
 
-![Data Mapping Process](/docs/images/data-mapping-process.png)
+![Data Mapping Process](/docs/images/data-pipeline-architecture.png)
 
 ---
 
@@ -237,9 +237,9 @@ Our intuitive data mapping process ensures accurate field mapping and data trans
 
 -   Added comprehensive Content Security Policy
 -   Implemented server-side secure storage for sensitive data
--   Enhanced input validation with Zod schemas
--   Added additional security headers
--   Improved CSRF protection
+- Enhanced input validation with Zod schemas
+- Added additional security headers
+- Improved CSRF protection
 
 ### Error Handling
 
@@ -337,14 +337,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 For support, email [support@nebulasuite.com](mailto:support@nebulasuite.com) or join our Slack channel.
 
----
-
 ## Security Considerations
 
 The following vulnerabilities were identified during the pre-deployment checklist:
 
--   **`xlsx`**: A high-severity vulnerability exists in the `xlsx` package due to Prototype Pollution and Regular Expression Denial of Service (ReDoS). No fix is currently available. Mitigation strategies should be investigated, or an alternative library should be considered.
--   **`dompurify`**: A moderate-severity vulnerability exists in the `dompurify` package, which is a dependency of `mermaid`. A fix is available by updating `mermaid`, but this introduces breaking changes.
+*   **`xlsx`**: A high-severity vulnerability exists in the `xlsx` package due to Prototype Pollution and Regular Expression Denial of Service (ReDoS). No fix is currently available. Mitigation strategies should be investigated, or an alternative library should be considered.
+*   **`dompurify`**: A moderate-severity vulnerability exists in the `dompurify` package, which is a dependency of `mermaid`. A fix is available by updating `mermaid`, but this introduces breaking changes.
 
 Additionally, a peer dependency conflict exists between `react-day-picker` and `date-fns`. Downgrading `date-fns` did not resolve this conflict.
 
