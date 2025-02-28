@@ -9,6 +9,10 @@ A modern, scalable SaaS platform for Amazon sellers with a focus on clean design
 
 [Clone Repository](https://github.com/johnwesleyquintero/nebula-suite.git)
 
+```
+https://github.com/johnwesleyquintero/nebula-suite.git
+```
+
 ---
 
 [TOC]
